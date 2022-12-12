@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.VBox?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.control.ComboBox?>
+
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.ScrollPane?>
+<ScrollPane xmlns:fx="http://javafx.com/fxml" fx:controller="com.example.matheus_17_lab5.ReceiptController">
+    <GridPane alignment="TOP_CENTER" style="-fx-padding: 10 10 10 10;">
+        <gridLinesVisible>false</gridLinesVisible>
+        <Label     GridPane.rowIndex="1"  GridPane.columnIndex="1" text="Math's Grocery Shop - Your Receipt" GridPane.columnSpan="10" style="-fx-font-size: 14px; -fx-font-weight: bolder;"/>
+        <Label fx:id="lblOutput" GridPane.rowIndex="35" GridPane.columnIndex="1" GridPane.columnSpan="10"/>
+    </GridPane>
+</ScrollPane>

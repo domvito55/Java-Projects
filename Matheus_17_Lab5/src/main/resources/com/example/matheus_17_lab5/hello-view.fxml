@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.VBox?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.control.ComboBox?>
+
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.TextField?>
+<GridPane alignment="TOP_CENTER" xmlns:fx="http://javafx.com/fxml"
+          fx:controller="com.example.matheus_17_lab5.StoreController">
+    <gridLinesVisible>false</gridLinesVisible>
+    <Label     GridPane.rowIndex="1"  GridPane.columnIndex="1" text="Math's Grocery Shop" GridPane.columnSpan="10" style="-fx-font-size: 14px; -fx-font-weight: bolder;"/>
+    <Label     GridPane.rowIndex="3"  GridPane.columnIndex="1" text="---------------------------------------------------------------------" GridPane.columnSpan="5"/>
+    <HBox      GridPane.rowIndex="5"  GridPane.columnIndex="3">
+        <Label text="Item: "/>
+        <ComboBox fx:id="cmbItem" onAction="#onItemSelected"/>
+        <Label text=" Qty: "/>
+        <ComboBox fx:id="cmbQty" onAction="#onQtySelected"/>
+        <Label text="   "/>
+        <Button text="Add to cart" onAction="#onAddClick"/>
+    </HBox>
+    <Label fx:id="lblNumberItems" GridPane.rowIndex="8" GridPane.columnIndex="3" GridPane.columnSpan="10" style="-fx-text-fill: blue"/>
+    <Label     GridPane.rowIndex="10"  GridPane.columnIndex="1" text="Name : " />
+    <TextField GridPane.rowIndex="10"  GridPane.columnIndex="3" fx:id="tfName" prefColumnCount="10"/>
+    <Label     GridPane.rowIndex="15"  GridPane.columnIndex="1" text="Phone : " />
+    <TextField GridPane.rowIndex="15"  GridPane.columnIndex="3" fx:id="tfPhone" prefColumnCount="10"/>
+    <Label     GridPane.rowIndex="20"  GridPane.columnIndex="1" text="Address : " />
+    <TextField GridPane.rowIndex="20"  GridPane.columnIndex="3" fx:id="tfAddress" prefColumnCount="10"/>
+    <Label     GridPane.rowIndex="25"  GridPane.columnIndex="1" text="Mode : "/>
+    <HBox      GridPane.rowIndex="25"  GridPane.columnIndex="3" spacing="50">
+        <RadioButton text="Pick up" fx:id="rdbPick" onAction="#onModeSelected"/>
+        <RadioButton text="Delivery" fx:id="rdbDelivery" onAction="#onModeSelected"/>
+    </HBox>
+    <Button    GridPane.rowIndex="30" GridPane.columnIndex="3" text="Place Order" onAction="#onOrderClick"/>
+    <Label fx:id="lblOutput" GridPane.rowIndex="35" GridPane.columnIndex="1" GridPane.columnSpan="10"/>
+</GridPane>
