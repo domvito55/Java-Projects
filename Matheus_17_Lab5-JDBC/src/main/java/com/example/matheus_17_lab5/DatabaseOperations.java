@@ -14,8 +14,8 @@ public class DatabaseOperations {
     private Connection connection;
 
     public void createConnection(){
-//        String host = "jdbc:oracle:thin:@oracle1.centennialcollege.ca:1521:SQLD";   //for execution from college campus
-        String host = "jdbc:oracle:thin:@199.212.26.208:1521:SQLD"; //for execution from remote/home
+        String host = "jdbc:oracle:thin:@oracle1.centennialcollege.ca:1521:SQLD";   //for execution from college campus
+//        String host = "jdbc:oracle:thin:@199.212.26.208:1521:SQLD"; //for execution from remote/home
         String username = "COMP228_F22_jg_39"; //replace with your username
         String password = "Demi2010";
 
